@@ -7,12 +7,14 @@
   <title>About | Don Slovenkai</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!--this style is not being applied from subfolder, copied to main folder for now-->
   <link rel="stylesheet" type="text/css" href="style3.css">  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
-<!--Local styles, in case you need it
+<!--Local styles, for test-->
 <style type="text/css">
 	.navbar {
 		border: 1px dotted red;
@@ -24,7 +26,8 @@
      	border: 1px dotted green;
      }
 </style>
--->
+
+
 
 <!-- original header
 
@@ -48,10 +51,22 @@
   <div class="row">
  
  <!--defines header row spanning 12 columns-->
-    <div class="col-md-12 navbar"> 
 
-    <p>Placeholder for header, that will include logo and navigation links.</p>
+  <div class="col-md-12 navbar"> 
 
+   <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+
+     <a href="index.html" id="logo">Don Slovenkai</a>
+       <nav>
+         <a href="index.html">About</a>
+         <a href="portfolio.html">Portfolio</a>
+         <a href="contact.html">Contact</a>
+       </nav>
+      </div>
+    </nav>
+
+    <!--<p>Placeholder for header, that will include logo and navigation links from bootstrap.</p>-->
     </div>
    <!--closes first row--> 
   </div>  
